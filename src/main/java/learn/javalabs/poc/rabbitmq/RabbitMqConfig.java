@@ -47,12 +47,12 @@ public class RabbitMqConfig {
 
 	@Bean
 	public TopicExchange topic(){
-		return new TopicExchange(topicExchange,false,true);
+		return new TopicExchange(topicExchange);
 	}
 
 	@Bean
 	public Queue nonSelectiveQueue(){
-		return new Queue(nonSelectiveQueue,false,false, true);
+		return new Queue(nonSelectiveQueue);
 	}
 
 	@Bean
@@ -62,7 +62,7 @@ public class RabbitMqConfig {
 
 	@Bean
 	public Queue selectiveQueue(){
-		return new Queue(selectiveQueue,false,false, true);
+		return new Queue(selectiveQueue);
 	}
 
 	@Bean
@@ -72,12 +72,12 @@ public class RabbitMqConfig {
 
 	@Bean
 	public DirectExchange direct(){
-		return new DirectExchange(directExchange,false,true);
+		return new DirectExchange(directExchange);
 	}
 
 	@Bean
 	public Queue circleQueue(){
-		return new Queue(circleQueue,false,false, true);
+		return new Queue(circleQueue);
 	}
 
 	@Bean
@@ -87,7 +87,7 @@ public class RabbitMqConfig {
 
 	@Bean
 	public Queue squareQueue(){
-		return new Queue(squareQueue,false,false, true);
+		return new Queue(squareQueue);
 	}
 
 	@Bean
@@ -97,16 +97,16 @@ public class RabbitMqConfig {
 
 	@Bean
 	public FanoutExchange fanout(){
-		return new FanoutExchange(fanoutExchange,false,true);
+		return new FanoutExchange(fanoutExchange);
 	}
 
 	@Bean
 	public Queue fanQueue1(){
-		return new Queue(fanQueue1,false,false, true);
+		return new Queue(fanQueue1);
 	}
 	@Bean
 	public Queue fanQueue2(){
-		return new Queue(fanQueue2,false,false, true);
+		return new Queue(fanQueue2);
 	}
 
 	@Bean
